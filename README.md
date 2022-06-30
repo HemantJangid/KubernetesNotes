@@ -75,3 +75,33 @@ If a db pod restarts then you will all the data stored on that pod and yes, that
 - The mechanism we use for this purpose along with replication feature is known as Stateful Set.
 - So this component is mainly for databases. i.e mqsql, mongodb etc
 - It is slightly difficult to create database application using statefull sets.
+
+## KUBERNETED ARCHITECTURE
+
+https://www.youtube.com/watch?v=X48VuDVv0do&t=1349s
+
+## MINICUBE AND KUBECTL
+
+https://www.youtube.com/watch?v=X48VuDVv0do&t=2087s
+
+### MINICUBE
+
+1 Node kubernetes cluster that runs on your local machine and can be used for testing kubernetes on local setup.
+
+### KUBECTL
+
+Now with minicube you have access to a node on local setup and you want interact with the cluster and kubectl is used for that. It is a commandline tool for kubernetes cluster.
+
+## KUBECTL COMMANDS
+
+`kubectl get pod` returns a list of pods running
+`kubectl get services` return a list of services running  
+`kubectl create deployment NAME --image=image [--dry-run] [options]` creates a new deployment with provided image
+`kubectl create deployment nginx-dep --image=nginx` creates a new deployment with nginx image
+`kubectl edit deployment nginx-dep` edit deployment configuration
+`kubectl exec -it mongo-dep-6bb8cf99dd-jxlqt -- bin/bash` gives access to interactive terminal for provided pod
+`kubectl delete deployment mongo-dep` deletes the specified deployment
+
+## KUBECTL CONFIGURATION FILES
+
+`kubectl apply -f ngixn-dep.yaml` executes whatever is inside the config file
