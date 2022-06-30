@@ -94,7 +94,7 @@ Now with minicube you have access to a node on local setup and you want interact
 
 ## KUBECTL COMMANDS
 
-- - `kubectl get pod` returns a list of pods running
+- `kubectl get pod` returns a list of pods running
 - `kubectl get services` return a list of services running
 - `kubectl create deployment NAME --image=image [--dry-run] [options]` creates a new deployment with provided image
 - `kubectl create deployment nginx-dep --image=nginx` creates a new deployment with nginx image
